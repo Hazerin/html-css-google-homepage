@@ -38,8 +38,20 @@ header {
 }
 
 .icon-link {
+    /*grid + place-content: center è utile per centrare un singolo elemento interno */
+    display: grid;
+    place-content: center;
+    background: red;
     font-size: 1.1rem;
     color: inherit;
+    width: 30px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 100%;
+}
+
+.icon-link:hover {
+    color: blue;
 }
 
 .img-button {
