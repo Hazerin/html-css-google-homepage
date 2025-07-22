@@ -6,7 +6,10 @@
 }
 
 body {
-   font-size: 0.9rem; 
+   display: flex;
+   flex-direction: column;
+   font-size: 0.9rem;
+   min-height: 100vh;
 }
 
 .google-header {
@@ -41,7 +44,6 @@ header {
     /*grid + place-content: center è utile per centrare un singolo elemento interno */
     display: grid;
     place-content: center;
-    background: red;
     font-size: 1.1rem;
     color: inherit;
     width: 30px;
@@ -51,7 +53,7 @@ header {
 }
 
 .icon-link:hover {
-    color: blue;
+    background: lightgray;
 }
 
 .img-button {
@@ -64,4 +66,39 @@ header {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 100%;
+}
+
+main {
+    /* Chi ha il valore di flex più alto occupa più spazio nel contenitore flessibile. Viene fatta una proporzione tra questo e gli altri
+    valori dei container nello stessa sezione (body in questo caso)*/
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.input-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgb(235,235,235);
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.input-bar div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
