@@ -140,3 +140,54 @@ main {
 .button-grid button:hover {
     border: 1px solid slategray;
 }
+
+.language-text {
+    font-size: 0.8rem;
+}
+
+.language-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.language-link:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: rgb(244, 244, 244);
+    font-size: 0.8rem;
+}
+
+/* Solo i figli div che si trovano nel footer, non i figli dei figli */
+footer > div {
+    padding: 1rem;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Do the smaller screen first */
+
+@media (min-width: 640px) {
+
+}
