@@ -34,7 +34,7 @@ main {
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 1rem;
+    padding: 4rem 1rem;
 }
 
 .google-header {
@@ -156,25 +156,12 @@ main {
 
 footer {
     background: rgb(244, 244, 244);
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /* Solo i figli div che si trovano nel footer, non i figli dei figli */
 footer > div {
     padding: 1rem;
-}
-
-.footer-grid {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 1rem;
-}
-
-.footer-links {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
 }
 
 .footer-links a {
@@ -186,8 +173,46 @@ footer > div {
     cursor: pointer;
 }
 
+.footer-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-container-second .text-link {
+    display: none;
+}
+
 /* Do the smaller screen first */
 
 @media (min-width: 640px) {
+
+    footer {
+        font-size: 0.9rem;
+    }
+
+    .footer-grid {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .footer-links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .nav-container-second .text-link {
+    display: block;
+}
 
 }
