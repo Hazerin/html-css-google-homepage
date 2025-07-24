@@ -104,6 +104,7 @@ main {
 .input-bar input {
     flex: 1;
     border: none;
+    /*Il bordo che appare quando si seleziona un elemento*/
     outline: none;
     width: 100%;
 }
