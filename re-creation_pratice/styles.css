@@ -125,19 +125,17 @@ input {
 
 footer {
     background: rgb(237, 237, 237);
-    height: 10%;
 }
 
 .nation,
 .footer-links {
     display: flex;
-    height: 50%;
 }
 
 .nation {
     display: grid;
     align-items: center;
-    padding: 0 0 0 10px;
+    padding: 10px;
 }
 
 .footer-links-subsection {
@@ -146,4 +144,5 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 10px;
 }
