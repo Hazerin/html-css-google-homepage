@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Google homepage</title>
     <link rel="stylesheet" href="styles.css">
-        <!--Fonts-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!---->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
     <header>
         <nav>
-            <div class="nav-section">
+            <div class="nav-div">
                 <a href="/">
                     <p>About</p>
                 </a>
@@ -22,21 +23,21 @@
                     <p>Store</p>
                 </a>
             </div>
-            <div class="nav-section">
+            <div class="nav-div">
                 <a href="/">
                     <p>Gmail</p>
                 </a>
                 <a href="/">
                     <p>Images</p>
                 </a>
-                <a href="/" class="icon-link">
+                <a class="icon-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
                     <i class="fa-solid fa-flask"></i>
                 </a>
-                <a href="/" class="icon-link">
+                <a class="icon-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" target="_blank">
                     <i class="fa-solid fa-braille"></i>
                 </a>
                 <button class="profile-picture">
-                    <img src="../public/profile_picture.jpg" alt="Profile picture">
+                    <img src="../public/profile_picture.jpg" alt="pfp">
                 </button>
             </div>
         </nav>
@@ -45,8 +46,8 @@
         <h1>Google</h1>
         <div class="search-bar">
             <i class="fa-solid fa-magnifying-glass input-icons"></i>
-            <input type="text" class="search-text"/>
-            <div class="microphone-image">
+            <input type="text" title="Search">
+            <div class="microcamera">
                 <button class="input-icon">
                     <i class="fa-solid fa-microphone" title="Search by voice"></i>
                 </button>
@@ -56,37 +57,38 @@
             </div>
         </div>
         <div class="search-buttons">
-            <button><p>Search with Google</p></button>
-            <button><p>I'm feeling lucky</p></button>
+            <button class="search-button" title="Search">
+                Search with Google
+            </button>
+            <button class="search-button" title="Search">
+                I'm feeling lucky
+            </button>
         </div>
-        <p>Google offered in <a href="">English</a></p>
     </main>
     <footer>
-        <div class="nation">
-            <p>Italy</p>
-        </div>
-        <hr class="hr-line">
-        <div class="bottom-links">
-            <div class="footer-div">
+        <p class="nation">Italy</p>
+        <hr>
+        <div class="footer-links">
+            <div class="footer-links-subsection">
                 <a href="">
-                    <p>link1</p>
+                    <p>Pubblicità</p>
                 </a>
                 <a href="">
-                    <p>link1</p>
+                    <p>Pubblicità</p>
                 </a>
                 <a href="">
-                    <p>link1</p>
+                    <p>Pubblicità</p>
                 </a>
             </div>
-            <div class="footer-div">
+            <div class="footer-links-subsection">
                 <a href="">
-                    <p>link1</p>
+                    <p>Privacy</p>
                 </a>
                 <a href="">
-                    <p>link1</p>
+                    <p>Termini</p>
                 </a>
                 <a href="">
-                    <p>link1</p>
+                    <p>Impostazioni</p>
                 </a>
             </div>
         </div>
